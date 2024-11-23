@@ -9,6 +9,7 @@ public class NCryptocurrency {
     private static final CryptoAPI coinGeckoAPI = new CoinGeckoAPI();
     private static final CryptoAPI binanceAPI = new BinanceAPI();
 
+    // Singleton pattern
     private NCryptocurrency() {
     }
 
