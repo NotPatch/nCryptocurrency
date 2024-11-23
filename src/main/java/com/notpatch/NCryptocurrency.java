@@ -2,23 +2,22 @@ package com.notpatch;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
-public class nCryptocurrency {
+public class NCryptocurrency {
     private static JavaPlugin plugin;
+    private static APIProvider apiProvider;
 
 
     public static void setPlugin(final JavaPlugin plugin) {
-        if (nCryptocurrency.plugin != null) {
+        if (NCryptocurrency.plugin != null) {
             throw new IllegalStateException("You already referenced api!");
         }
-        nCryptocurrency.plugin = plugin;
+        NCryptocurrency.plugin = plugin;
     }
 
-    public static JavaPlugin getPlugin() {
+    public static APIProvider getAPI() {
         if (plugin == null) {
             throw new IllegalStateException("Plugin reference not set! Call setPlugin() first.");
         }
-        return plugin;
+        return apiProvider;
     }
-
-
 }
