@@ -25,7 +25,7 @@ public class BinanceAPI implements CryptoAPI {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return -1; // Hata durumunda -1 döner
+        return -1;
     }
 
     private static final String BASE_URL = "https://api.binance.com/api/v3/ticker/price";

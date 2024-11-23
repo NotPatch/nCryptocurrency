@@ -23,7 +23,7 @@ public class CoinGeckoAPI implements CryptoAPI {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return -1; // Hata durumunda -1 döner
+        return -1;
     }
 
     private static final String BASE_URL = "https://api.coingecko.com/api/v3/simple/price";
